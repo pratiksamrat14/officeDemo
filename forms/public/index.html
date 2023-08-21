@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDVJYr5wTMJRiCNG5FbLpQFdtSYQELFHL1JQopR4A&s"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>SignUp</title>
+    <script src="/src/index.js"></script>
+  </head>
+  <body class="body">
+    <header class="header"></header>
+    <!-- background image -->
+    <img
+      class="background-img"
+      src="https://images.unsplash.com/photo-1475070929565-c985b496cb9f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+      alt="404"
+    />
+    <main class="main-container">
+      <h1 style="text-shadow: 2px 2px 4px #f6b6b6">SignUp Form</h1>
+
+      <article class="form-container">
+        <form action="" class="form" novalidate>
+          <!-- Input firs name  -->
+          <label for="fname" class="label"
+            >First Name<sup class="astrik">*</sup> :
+          </label>
+          <input
+            class="form-element catg1"
+            name="fname"
+            type="text"
+            id="fname"
+            required
+            autofocus
+            title="name must not be null and use less than 25 characters"
+          />
+          <p class="errors" id="fname-error" >first name is required </p>
+          <br />
+          <!-- Input Last Name -->
+          <label for="lname" class="label"
+            >Last Name<sup class="astrik">*</sup> :</label
+          >
+          <input
+            class="form-element catg1"
+            name="lname"
+            type="text"
+            id="lname"
+            required
+          />
+          <p class="errors" id="lname-error" > last name is required  </p>
+          <br />
+          <!-- Input Email Address -->
+          <label for="email">Email<sup class="astrik">*</sup> : </label>
+          <input
+            class="form-element catg1"
+            name="email"
+            type="email"
+            id="email"
+            required
+          />
+          <p class="errors" id="email-error" >enter a valid email address contains @  </p>
+          <br />
+          <!-- Create Password  -->
+          <label for="create-pass">
+            Create Password<sup class="astrik">*</sup> :</label
+          >
+          <input
+            class="form-element catg1"
+            name="create-pass"
+            type="password"
+            id="create-pass"
+            onchange="onChangePass(event)"
+            required
+          />
+          <p class="errors" id="pass-error" > Choose a strong password ... !</p>
+          <br />
+          <!-- Confirm Password -->
+          <label for="confirm-pass"
+            >Confirm Password<sup class="astrik">*</sup> :</label
+          >
+          <input
+            class="form-element catg1"
+            name="confirm-pass"
+            type="password"
+            id="confirm-pass"
+           
+            required
+          />
+          <p class="errors" id="confirm-error" > Password does not match !</p>
+          <br />
+          <!-- Input Mobile Number -->
+          <label for="mobno">Mobile No.<sup class="astrik">*</sup> : </label>
+          <input
+            class="form-element catg1"
+            name="Mobile Number"
+            type="tel"
+            id="mobno"
+            onchange="mobfun(event)"
+            required
+          />
+          <p class="errors" id="mob-error" > Enter a valid movile number</p>
+          <br />
+          <!-- Input address  -->
+          <label for="address">Address<sup class="astrik">*</sup> :</label>
+          <input
+            class="form-element catg1"
+            name="address"
+            type="text"
+            id="address"
+            required
+          />
+          <br />
+          <!-- Input city and country -->
+          <label for="city">State<sup class="astrik">*</sup> : </label>
+          <input
+            class="form-element catg2"
+            name="city"
+            type="text"
+            id="city"
+            list="state"
+            required
+          />
+          <datalist id="state" class="address-list">
+            
+          </datalist>
+          <br />
+          <label for="country">City<sup class="astrik">*</sup> : </label>
+          <input
+            class="form-element catg2"
+            name="country"
+            type="text"
+            id="country"
+            required
+          />
+          <br />
+          <!-- Input Birthday date -->
+          <label for="dob">Date Of Birth<sup class="astrik">*</sup> : </label>
+          <input
+            class="form-element catg2"
+            name="Date of Birth "
+            type="date"
+            id="dob"
+            required
+          />
+          <p class="errors" id="dob-error" >This is not a valid birthdate must be 18+ </p>
+          <br />
+          <!-- Gender Input  -->
+          <label for="gender">Gender : </label>
+          <select class="form-element catg2" name="Gender" id="gender">
+            <option value="male" selected>Male</option>
+            <option value="female">Female</option>
+            <option value="other">Not to desclose</option>
+          </select>
+
+          <!-- terms and conditions input  -->
+          <p>
+            <input
+              name="terms&condition"
+              type="checkbox"
+              id="terms&conditions"
+              placeholder="I accept all terms and conditons"
+              required
+            />
+            <span>I accept all terms and conditions .</span>
+            <br />
+          </p>
+          <!-- submit and reset buttons -->
+          <button
+            type="submit"
+            class="form-element btn"
+            onclick="submitForm(event)"
+            id="my-button"
+          >
+            Submit
+          </button>
+          <button class="form-element btn" type="reset">Reset</button>
+        </form>
+      </article>
+    </main>
+
+    <footer></footer>
+  </body>
+
+</html>

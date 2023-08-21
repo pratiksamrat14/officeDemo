@@ -1,0 +1,38 @@
+div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin: 10px;
+    padding: 10px;
+}
+.flex-element2{
+    height: 70px;
+}
+.flex-element3{
+    height: 50px;
+}
+.flex-container{
+    width: 800px;
+    height: 500px;
+    
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: baseline;
+    
+
+    /* flex-direction: row-reverse; */
+    /* flex-wrap: wrap; */
+    /*  flex-flow: direction wrap ---> this shorthand for the properties mentioned above  */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+     /* align-items: center; */
+     
+}
+
+
+.flex-element1,.flex-element2,.flex-element3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

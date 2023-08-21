@@ -1,0 +1,97 @@
+body {
+  background-color: rgb(74, 230, 250);
+  background-image: url("https://images.unsplash.com/photo-1493514789931-586cb221d7a7?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=871&q=80");
+
+}
+
+.header {
+  margin: auto;
+  width: fit-content;
+  border: 1px solid white;
+  margin-bottom: 40px;
+  padding-left: 7px;
+  padding-right: 7px;
+  box-sizing: border-box;
+  height: fit-content;
+  border-radius: 20px;
+  background-color: rgb(65, 247, 65);
+  font-size: small;
+  font-weight: lighter;
+}
+.header:hover {
+  background-color: rgb(11, 82, 11);
+  color: white;
+}
+
+main {
+  border: 1px solid white;
+  width: fit-content;
+  margin: auto;
+  padding: 20px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: whitesmoke;
+  border-radius: 10px;
+  
+}
+
+main h2 {
+  background-color: rgb(101, 250, 218);
+  width: fit-content;
+  padding: 5px;
+  margin: auto;
+}
+
+.cont-1 {
+  margin-top: 20px;
+}
+
+input {
+  margin: 5px;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+.radio {
+  width: auto;
+  height: auto;
+}
+
+legend {
+  text-align: center;
+  margin: auto;
+}
+
+.fieldset {
+  margin: 20px;
+  padding: 10px;
+}
+.field-1 {
+  margin: 5px;
+  height: 30px;
+  border-radius: 10px;
+}
+.field-2 {
+  margin: 5px;
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+}
+
+button {
+  margin: auto;
+  height: 50px;
+  width: 100px;
+  font-size: 20px;
+  margin-left: 65px;
+  margin-top: 30px;
+  border-radius: 10px;
+  background-color: rgb(206, 30, 206);
+  color: white;
+}
+
+button:hover {
+  background-color: white;
+  color: black;
+}

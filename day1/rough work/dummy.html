@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      .center {
+        text-align: center;
+        color: red;
+      }
+      .center:hover {
+        color: blue;
+      }
+      div {
+        height: 500px;
+        width: 500px;
+        margin-top: auto;
+        margin-bottom: auto;
+        margin-left: auto;
+        margin-right: auto;
+        /* -webkit-margin-top-collapse: separate; */
+        /* short hand
+           margin: top right bottom left ;
+           margin: top/bottom left/rigth ; for 2 values ;
+           margin: top left/right bottom ; for 3 values ;
+        */
+      }
+      #div1 {
+        /* background-color: rgb(195, 232, 245); */
+        background-image: url("https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000");
+        background-repeat: no-repeat; /* repeat-x for horizontal and repeat-y for vertical  */
+        background-position: center; /*top ,intial etc. are other */
+        background-attachment: fixed; /*scroll*/
+
+        /*
+           shorthand :
+           background: color  image repeat attachment position ;
+         */
+
+        /* css text  */
+        text-align: justify; /* you may use left right etc.*/
+        direction: ltr;
+        unicode-bidi: bidi-override;
+        vertical-align: baseline;
+        text-decoration-line: overline;
+        text-decoration-color: red;
+        text-decoration-style: dashed;
+        text-decoration-thickness: 2px;
+        text-transform: capitalize;
+        text-indent: 40px;
+        word-spacing: 3px;
+        line-height: 3;
+        font-family: Tahoma, Verdana, sans-serif;
+      }
+      #div2 {
+        border-width: 2px;
+        border-color: black;
+        border-style: dotted; /* solid ,dotted ,double etc. explore */
+        /*  shorthand : border : width style color  */
+        border-radius: 50px;
+      }
+      #div2 p {
+        outline-width: 2px;
+        outline-color: red;
+        outline-style: dashed;
+        /* same shorthand */
+        outline-offset: 2px;
+        border: 1px solid black;
+        font-family: "Noto Sans JP", sans-serif;
+        /* 
+        
+            short hand for fonts
+            font-style
+            font  -variant
+            font-weight
+            font-size/line-height
+            font-family
+        */
+      }
+      #div3 {
+        background-color: rgb(202, 202, 243);
+        /* box-sizing: border-box; */
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        box-sizing: border-box;
+        /* shorthand are similar to margin  */
+      }
+      ul {
+        /* list-style-type: circle; */
+        /* list-style-position: inside; */
+        /* list-style-image: url("https://media.istockphoto.com/id/1146517111/photo/taj-mahal-mausoleum-in-agra.jpg?s=612x612&w=0&k=20&c=vcIjhwUrNyjoKbGbAQ5sOcEzDUgOfCsm9ySmJ8gNeRk="); */
+        /* height: 10px; */
+        /* width: 20px; */
+        background-color: rgb(226, 131, 147);
+        padding: 20px;
+        width: 300px;
+      }
+      ul li {
+        background-color: rgb(245, 212, 217);
+        padding: 20px;
+        color: black;
+        margin-left: 10px;
+        margin-top: 20px;
+      }
+      table {
+        width: 500px;
+        height: 200px;
+        text-align: center;
+        
+      }
+
+      tr:nth-child(even) {
+        background-color: rgb(69, 190, 53);
+      }
+      tr:hover {
+        background-color: rgb(248, 142, 56);
+      }
+      table,
+      th,
+      td,
+      tr {
+        border: 1px solid black;
+        border-collapse: collapse;
+      }
+      body > div{
+        width: 200px;
+        background-color: aqua;
+        display: inline;
+        overflow-x: auto;
+
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <table>
+        <tr>
+          <th>1</th>
+          <th>2</th>
+          <th>3</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </table>
+    </div>
+
+    <h1 class="center">Red and center-aligned heading</h1>
+    <p class="center">Red and center-aligned paragraph.</p>
+
+    <div id="div1">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid soluta
+      asperiores architecto odio aliquam id rem corrupti commodi, aspernatur vel
+      consequuntur magnam dolorem non cupiditate officia dolores, nesciunt quasi
+      repellendus!
+    </div>
+    <div id="div2"><p>outline</p></div>
+    <div id="div3"><h1>Sample Heading</h1></div>
+
+    <ul>
+      <li>pratik</li>
+      <li>samrat</li>
+      <li>vaibhav</li>
+      <li>kajale</li>
+    </ul>
+  </body>
+</html>

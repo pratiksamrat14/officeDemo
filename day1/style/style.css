@@ -1,0 +1,107 @@
+header.cont1 {
+  background-color: rgb(217, 242, 250);
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 5px;
+  width: 90.9%;
+  border-bottom-right-radius: 10px;
+}
+figure.cont1 {
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+}
+
+.login-form {
+  background-color: rgb(217, 242, 250);
+  width: 500px;
+  position: relative;
+  float: right;
+  top: 65px;
+  right: 9.1%;
+  border: 1px solid grey;
+  border-radius: 10px;
+  margin: 5px;
+  padding: 5px 10px 5px 3px;
+  font-family: Arial, Segoe UI, Arial, Verdana, Tahoma, sans-serif !important;
+  font-size: 13px;
+  font-weight: bold;
+  box-sizing: border-box;
+}
+
+figure.benefits {
+  position: absolute;
+  margin: 0;
+  top: 60px;
+  z-index: -1;
+}
+
+span.cont1 {
+  font-size: large;
+  font-style: italic;
+  font-weight: bold;
+}
+
+.footer {
+  background-color: rgb(217, 242, 250);
+  position: absolute;
+  width: 90.9%;
+  bottom: 7%;
+}
+
+p.footer {
+  text-align: center;
+  font-weight: bold;
+  color: rgb(78, 73, 73);
+}
+
+h1.form-heading {
+  text-align: center;
+  color: #00008b;
+  font-size: large;
+  font-weight: bold;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+input {
+  margin-top: 6px;
+  margin-bottom: 6px;
+  height: 20 px;
+  border-color: silver;
+}
+.subscriber-code {
+  width: 105px;
+}
+
+.astrik {
+  color: red;
+}
+
+.login-form {
+  padding-left: 15px;
+}
+
+.un-pass {
+  width: 99%;
+}
+
+.button{
+    margin-top: 12px;
+    margin-left: 200px;
+    border-radius: 5px;
+    background-color:#191981;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 14px;
+}
+
+.access{
+    text-align: center;
+}
+
+
+.button:hover{
+    color:black;
+    background-color: white;
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Sign Up Form</title>
+  </head>
+
+  <body class="container">
+    <!-- Adding heading for form in header -->
+    <header class="header" id="header_id">
+      <h1 id="heading">Sign Up Form</h1>
+    </header>
+
+    <!--Main body of form -->
+    <main class="main-container">
+      <h2>Sign Up</h2>
+      <article class="cont-1">
+          <form action="" id="form_id">
+            <fieldset class="filedset">
+              <legend>Personal Details</legend>
+              <!-- first name and last name input -->
+              <label for="fname">First Name : </label>
+              <input
+                type="text"
+                name="fname"
+                id="fname"
+                maxlength="20"
+                minlength="2"
+                required
+              />
+              <br />
+              <label for="lname">Last Name : </label>
+              <input type="text" id="lname" name="lname" required />
+              <br />
+              <!-- Gender input -->
+              <label for="radio-male">Male</label>
+              <input class="radio" type="radio" id="radio-male" name="gender"  />
+              <label for="radio-female"> Female </label>
+              <input class="radio" type="radio" id="radio-female" name="gender" />
+              <br />
+              <!-- here used same name for two radio button so your are able to select only one among two -->
+
+              <label for="mobile_no">Mobile Number : </label>
+              <select class="field-1" name="country_code" id="country_code">
+                <option value="+1">+1</option>
+                <option value="+91" selected>+91</option>
+              </select>
+              <input
+                type="tel"
+                pattern="[0-9]{10}"
+                id="mobile_no"
+                required
+              />
+
+              <br />
+
+              <!--input email id -->
+              <label for="email" required>Email : </label>
+              <input type="email" id="email"/>
+              <br />
+
+              <label for="DOB">Date of Birth : </label>
+              <input type="date" id="DOB" name="birth date" required />
+            </fieldset>
+
+            <fieldset class="fieldset">
+              <legend>Address Details</legend>
+              <label for="address">Enter your Address : </label>
+              <textarea
+                 class="field-2"
+                name="address"
+                id="address"
+                cols="50"
+                rows="1"
+              ></textarea>
+              <br />
+              <label for="state">State or Provision :</label>
+              <select name="state" class="field-2" id="state">
+                <option value="Maharashtra">Maharashtra</option>
+                <option value="Andhman-Nikobar">Andhman-Nikobar</option>
+                <option value="Karnatak">Karnatak</option>
+              </select>
+              <br />
+              <label for="city">City : </label>
+              <select name="city" class="field-2" id="city">
+                <option value="Aurangabad">Aurangabad</option>
+                <option value="Beed">Beed</option>
+                <option value="Nagpur">Nagpur</option>
+              </select>
+            </fieldset>
+
+            
+              <label for="password"> Create Password :</label>
+              <input type="password" id="password" name="password" />
+              <br />
+             <input type="checkbox" class="radio" id="policy" />
+              <label for="policy">I agree term and condition </label>
+              <br />
+              <button type="submit" value="button">submit</button> &nbsp;&nbsp;
+              <button type="reset" value="reset">reset</button>
+          
+          </form>
+  
+      </article>
+    </main>
+
+    <footer></footer>
+  </body>
+</html>
